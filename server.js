@@ -10,10 +10,10 @@ app.use(cors());
 app.use(bodyParser.json());
 
 const db = mysql.createConnection({
-  host: "localhost",
-  user: "root",
-  password: "",
-  database: "schoolportal_db",
+  host: "bgin1sgtb6py8ftcal3a-mysql.services.clever-cloud.com",
+  user: "uvq8dh6p8eyfn7nk",
+  password: "8m2keiGr8WlV3HkAu7cC",
+  database: "bgin1sgtb6py8ftcal3a",
 });
 
 db.connect((err) => {
@@ -1241,4 +1241,5 @@ app.get("/api/leaderboard/departments", (req, res) => {
     }
     res.json(results);
   });
+
 });
